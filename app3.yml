@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-app-3
+  name: mypyapp
   labels:
-    app: nginx-app-3
+    app: mypyapp
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: nginx-app-3
+      app: mypyapp
   template:
     metadata:
       labels:
-        app: nginx-app-3
+        app: mypyapp
     spec:
       containers:
-      - name: nginx
-        image: nginx:latest
+      - name: mypyapp
+        image: jcrelling/cnfdemopyapp:5befd192ddb26916990da84e4005648f73fdfc51
         ports:
         - containerPort: 80
