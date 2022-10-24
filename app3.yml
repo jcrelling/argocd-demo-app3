@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: mypyapp
-        image: jcrelling/cnfdemopyapp:5befd192ddb26916990da84e4005648f73fdfc51
+        image: jcrelling/cnfdemopyapp:d3f1a4ae1ffe5e0f20e7e576f91bd40d780f7f90
         ports:
         - containerPort: 80
